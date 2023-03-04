@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFB6C1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="Periodoc"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="345dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_baseline_settings_24" />
+
+        <Button
+            android:id="@+id/listWindow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_baseline_format_list_bulleted_24" />
+
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mark Your Date"
+        android:textAlignment="center"
+        android:textColor="#b2001c"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_calen">
+
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </CalendarView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:background="@drawable/bg_btn"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Save My Date"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/returnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_calen"
+        android:text="Current period"
+        android:textSize="17dp"
+        android:padding="5dp"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/returnNextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_calen"
+        android:padding="5dp"
+        android:text="Next period     "
+        android:textColor="@color/colorAccent"
+        android:textSize="17dp" />
+    <TextView
+        android:id="@+id/ovulation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_calen"
+        android:padding="5dp"
+        android:text="Ovulation         "
+        android:textColor="@color/colorAccent"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/fertility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="7dp"
+        android:padding="5dp"
+        android:text="Your most fertile days are from 1 day prior ovulation to 1 day after ovulation "
+        android:textColor="@color/colorAccent"
+        android:textSize="17dp" />
+
+
+
+
+
+
+
+</LinearLayout>
